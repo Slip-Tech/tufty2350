@@ -20,13 +20,7 @@ def update():
     else:
         screen.pen = color.lime
         screen.clear()
-        
 
-    # # draw a lighter rectangle as a banner
-    # screen.pen = color.rgb(60, 80, 120)
-    # screen.rectangle(rect(5, 40, screen.width - 10, 30))
-
-    # draw the text centred inside the banner
     screen.pen = color.white
     screen.font = rom_font.smart
 
