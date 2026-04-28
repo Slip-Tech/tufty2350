@@ -22,12 +22,12 @@ def update():
         screen.clear()
 
     screen.pen = color.white
-    screen.font = rom_font.smart
+    screen.font = rom_font.manticore
 
     text = messages[current]
     width, _ = screen.measure_text(text)
     x = (screen.width / 2) - (width / 2)
 
-    screen.text(text, x, 45)
+    screen.text(text, x, 40)
 
 run(update)
