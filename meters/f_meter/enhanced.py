@@ -1,32 +1,26 @@
-messages = ["Many Fucks", "Some Fucks", "No Fucks!!"]
-colours = ["lime", "yellow", "red"]
-current = 0
+messages = ["No F*cks!!", "Some F*cks", "Many F*cks"]
+colours = ["red", "yellow", "lime"]
+current = 2
 
 def update():
     global current  
 
-    if badge.pressed(BUTTON_UP):
-        current = (current - 1) #% len(messages)
+    if badge.pressed(BUTTON_UP) and current < 2:
+        current += 1
 
-    if badge.pressed(BUTTON_DOWN):
-        current = (current + 1) #% len(messages)
-    
-    if current <= 0:
-        current = 0
-
-    if current > 2:
-        current = 2  
+    if badge.pressed(BUTTON_DOWN) and current > 0:
+        current -= 1
 
     elif current == 1:
         screen.pen = color.rgb(212, 206, 44)
         screen.clear()
 
     elif current == 2:
-        screen.pen = color.red
+        screen.pen = color.lime
         screen.clear()
 
     else:
-        screen.pen = color.lime
+        screen.pen = color.red
         screen.clear()
 
     screen.font = rom_font.bacteria
