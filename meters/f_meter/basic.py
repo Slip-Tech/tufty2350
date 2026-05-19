@@ -1,5 +1,4 @@
 messages = ["Many F*cks", "Some F*cks", "No F*cks!!"]
-colours = ["lime", "yellow", "red"]
 current = 0
 
 def update():
