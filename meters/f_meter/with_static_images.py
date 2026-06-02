@@ -1,4 +1,4 @@
-messages = ["No Fucks!!", "Some Fucks", "Many Fucks"]
+messages = ["No F*cks!!", "Some F*cks", "Many F*cks"]
 current = 2
 sprite_middle = image.load("/system/assets/middle.png")
 sprite_down = image.load("/system/assets/down.png")
